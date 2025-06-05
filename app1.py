@@ -13,7 +13,7 @@ from langchain.chains import RetrievalQA
 from langchain_ollama import OllamaLLM
 
 
-pdf_loader = PyPDFLoader("INTERNAL SECURITY.pdf")
+pdf_loader = PyPDFLoader("https://github.com/Ezibliss/IS-chatbot/blob/1e190b7bb4f05109bd3035c64badcab5d82510e1/INTERNAL%20SECURITY.pdf")
 documents = pdf_loader.load()
 text_splitter = RecursiveCharacterTextSplitter(chunk_size = 500, chunk_overlap = 50)
 chunks = text_splitter.split_documents(documents)
