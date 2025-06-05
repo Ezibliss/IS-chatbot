@@ -1,9 +1,22 @@
-pypdf
-unstructured
-pinecone-client
+# Core dependencies
 streamlit
-langchain
 openai
 tiktoken
+
+# LangChain core & extensions
+langchain==0.1.14
+langchain-community
+langchain-ollama
+langchain-huggingface
+
+# Vector store and embedding
 faiss-cpu
 chromadb
+
+# PDF processing
+PyMuPDF  # Used by PyPDFLoader internally (or fallback is fitz)
+
+# Hugging Face
+transformers
+huggingface-hub
+
