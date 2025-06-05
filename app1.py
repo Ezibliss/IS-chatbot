@@ -14,7 +14,7 @@ from langchain.chains import RetrievalQA
 from langchain_ollama import OllamaLLM
 
 
-pdf_loader = PyPDFLoader("C:/Users/Admin/Desktop/INTERNAL SECURITY.pdf")
+pdf_loader = PyPDFLoader("INTERNAL SECURITY.pdf")
 documents = pdf_loader.load()
 text_splitter = RecursiveCharacterTextSplitter(chunk_size = 500, chunk_overlap = 50)
 chunks = text_splitter.split_documents(documents)
