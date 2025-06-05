@@ -2,6 +2,7 @@
 streamlit
 openai
 tiktoken
+torch
 
 # LangChain and Ecosystem
 langchain
