@@ -1,3 +1,5 @@
+import os
+os.environ["TORCH_LOAD_META_TENSORS"] = "0"
 import streamlit as st
 import asyncio
 from langchain.memory import ConversationBufferMemory
