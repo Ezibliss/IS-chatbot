@@ -1,4 +1,5 @@
-import streamlit as st
+import streamlit as 
+import asyncio
 from langchain.memory import ConversationBufferMemory
 import openai
 from langchain.embeddings import OpenAIEmbeddings, HuggingFaceEmbeddings
@@ -13,7 +14,7 @@ from langchain.chains import RetrievalQA
 from langchain_ollama import OllamaLLM
 
 
-pdf_loader = PyPDFLoader("INTERNAL SECURITY.pdf")
+pdf_loader = PyPDFLoader("C:/Users/Admin/Desktop/INTERNAL SECURITY.pdf")
 documents = pdf_loader.load()
 text_splitter = RecursiveCharacterTextSplitter(chunk_size = 500, chunk_overlap = 50)
 chunks = text_splitter.split_documents(documents)
@@ -47,6 +48,10 @@ qa = ConversationalRetrievalChain.from_llm(
 )
 
 
+try:
+    asyncio.get_running_loop()
+except RuntimeError:  # No loop is running
+    asyncio.set_event_loop(asyncio.new_event_loop())
 
 
 st.set_page_config(page_title="Your Interactive Learning Hub", page_icon="📚")
