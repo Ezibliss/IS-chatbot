@@ -1,0 +1,9 @@
+pypdf
+unstructured
+pinecone-client
+streamlit
+langchain
+openai
+tiktoken
+faiss-cpu
+chromadb
