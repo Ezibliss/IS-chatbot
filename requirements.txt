@@ -17,7 +17,7 @@ huggingface-hub
 faiss-cpu
 
 # PDF loader
-PyPDF2
+pypdf
 
 # File watcher (helps prevent silent crashes)
 watchdog
