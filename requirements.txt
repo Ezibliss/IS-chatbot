@@ -1,22 +1,25 @@
-# Core dependencies
+# Core
 streamlit
 openai
 tiktoken
 
-# LangChain core & extensions
-langchain==0.1.14
+# LangChain and Ecosystem
+langchain
 langchain-community
-langchain-ollama
 langchain-huggingface
+langchain-ollama
 
-# Vector store and embedding
-faiss-cpu
-chromadb
-
-# PDF processing
-PyMuPDF  # Used by PyPDFLoader internally (or fallback is fitz)
-
-# Hugging Face
+# Embeddings & Models
 transformers
 huggingface-hub
+
+# Vector store
+faiss-cpu
+
+# PDF loader
+PyMuPDF
+
+# File watcher (helps prevent silent crashes)
+watchdog
+
 
